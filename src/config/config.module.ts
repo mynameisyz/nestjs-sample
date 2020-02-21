@@ -7,6 +7,7 @@ import { ConfigService } from './config.service';
   imports: [
     ConfigManagerModule.register({
       useFile: '.env',
+      allowMissingEnvFile: true,
     }),
   ],
   providers: [ConfigService],
